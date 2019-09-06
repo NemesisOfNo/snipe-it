@@ -1,0 +1,28 @@
+# Server specs
+Your Snipe server will host MySQL and Redis. Depending on how much you'll be interacting with Snipe, your requirements might be low or high. I'll give some generalizations here based on low or high.
+
+## Low interacting
+tl;dr - You have it set up to keep track of several hundred assets that just need to be kept track of.
+* You'll use it a couple of times a day to check in or check out items.
+* You rarely put new items into your system.
+* Users check out assets a couple of times a week.
+* One person uses the database at any given time.
+
+| Minimum RAM | Minimum CPU | Storage |
+|:-----------:|:-----------:|:-------:|
+|     2GB     |      2      |  40GB   |
+
+## Hight interacting
+tl;dr - You have an inventory team that is constantly using the service as their primary tool for their role.
+* You have a team that's dedicated to tracking assets coming in and out all day. 
+* You have customers who are constantly swapping assets with your inventory.
+* You have several thousand or more assets.
+* You have several members of your team accessing inventory information at the same time all day.
+
+| Minimum RAM | Minimum CPU | Storage |
+|:-----------:|:-----------:|:-------:|
+|     16GB    |      4      |  200GB  |
+
+Once you've decided what bucket you fit into, you can go to a source like ec2instances.info to search for a server that fits your needs.
+There are other ways to offload MySQL from the server (MySQL specific server like RDS), but I won't cover that in this tutorial. 
+Once you've decided which server is best for your needs, create it, secure access to it, enable it.
