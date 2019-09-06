@@ -1,0 +1,12 @@
+# Install prerequisite software
+Patch your Ubuntu server first. Often times it's out of date and it's just best practice to start with a fully patched system.
+From your server's terminal run:
+> sudo apt update && sudo apt upgrade -y
+You will need to install a lot of prerequisite software. Snipe needs MySQL, Apache 2, PHP 7.2, Redis Server, and some PHP modules.
+Let's install the prerequisite software:
+> sudo apt install mysql-server-5.7 redis-server apache2 php7.2 php7.2-mbstring php7.2-curl php7.2-mysql php7.2-ldap php7.2-zip php7.2-bcmath php7.2-xml php7.2-gd composer -y
+When everything has been installed, you will need to add the CertBot repository:
+> sudo add-apt-repository ppa:certbot/certbot
+Now install CertBot:
+> apt install certbot python-certbot-apache -y
+Now that this is complete, move on to the next section.
