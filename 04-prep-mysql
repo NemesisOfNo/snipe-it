@@ -1,0 +1,25 @@
+# Preparing MySQL
+You will have to prep MySQL to allow Snipe to populate the data inside of the db.
+Run through the mysql_secure_installation process.
+> sudo mysql_secure_installation
+Choose n when prompted to check passwords for security.
+We need a strong random password for root. Open a new terminal window, run this command, and copy the output as your random password. Store it somewhere safe.
+> openssl rand 60 | openssl base64 -A
+Choose y to remove anonymous users.
+Choose y to disallow root to login remotely.
+Choose y to remove test databases.
+Choose y to reload tables.
+Log into MySQL to create a snipe admin account and the snipe database.
+> mysql -u root -p
+> Enter password: <enter the password from step 3>
+> mysql >
+At the prompt, copy and paste the following and hit enter.
+> create database snipeit; (or whatever you want to name the database)
+Create the snipe user who will access the database.
+> create user snipe_user; (or a different unique name)
+We need another strong random password. Open a new terminal window, run this command, and copy the output as your random password. Store it somewhere safe.
+> openssl rand 60 | openssl base64 -A
+> Set the password and permissions for the snipe_user account in the database. Where <user name's password> is, put the password created in the previous step ensuring you have the ‘ ‘ around the password. Put the name of the db where <db name> is. Put the username where <user name> is.
+> grant all on <db name>.* to '<user name>'@'localhost' identified by '<user name's password>';
+Quit out of mysql.
+> quit;
