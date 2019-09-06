@@ -1,0 +1,8 @@
+# Overview of Snipe-IT
+Snipe-IT is an open source tool that allows IT organizations to manage inventory of assets. Organizing assets can be difficult, especially if you don't know what you own. Not knowing what your inventory status is creates problems not only for IT, but for auditors, finance teams, and even security. Snipe-IT is a robust platform that addresses the needs.
+
+## Two flavors
+Snipe-IT comes in two versions:
+1. Self hosted
+2. Saas hosted
+I will cover #1 in this tutorial. I found myself initially throwing in the towel with trying to set the first option up on my own. Frustrated at the documentation, I decided to try the second option. It didn't really work for my needs. With a small break between touching Snipe-IT, I took a crack at option one and was able to get it up and running.
