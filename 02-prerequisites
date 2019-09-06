@@ -1,0 +1,20 @@
+# Assumptions
+I'll assume you have the ability to spin up a VM. For my tutorial, I'm using EC2 in AWS to create my server. This tutorial will work with any VM or physical machine available. 
+
+# The tl;dr
+Here's what we'll do to get up and running
+1. Decide what kind of server specs we need.
+2. Log into our box.
+3. Install prerequisite software.
+4. Prepare MySQL.
+5. Pull Snipe from Github.
+6. Prepare Apache.
+7. Setup Redis Server.
+8. Configure the .env file.
+9. Install dependencies.
+10. Generate the app key.
+11. Disable/Enable Apache sites.
+12. Log into our server.
+13. Update DNS.
+14. Install certificates from Let's Encrypt.
+15. Switch on SSL.
