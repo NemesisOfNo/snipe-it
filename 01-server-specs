@@ -25,4 +25,5 @@ tl;dr - You have an inventory team that is constantly using the service as their
 
 Once you've decided what bucket you fit into, you can go to a source like ec2instances.info to search for a server that fits your needs.
 There are other ways to offload MySQL from the server (MySQL specific server like RDS), but I won't cover that in this tutorial. 
-Once you've decided which server is best for your needs, create it, secure access to it, enable it.
+Once you've decided which server is best for your needs, select it. When given the option for what OS you want to run, choose Ubuntu Server 18.04LTS.
+Continue on to the next section.
